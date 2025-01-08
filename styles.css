@@ -21,6 +21,28 @@ header{
     padding: 10px 0;
 }
 
+.logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.logo a{
+    font-weight: 600;
+    color: #f5f3ec;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    color: #2c6e49;
+    padding: 10px 20px;
+    background-color: #f5f3ec;
+    border-radius: 5px;
+}
+
 nav{
     text-align: center;
 }
