@@ -65,36 +65,27 @@ nav{
 
 
 .main-word{
-    display: flex;
+    display:grid;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #f7f7f9;
     width: calc(100% - 80px);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size: 15vw;
+    font-weight: 400;
+    font-style: normal;
+    gap: 0px 0px;
     height: 92vh;
     margin: 0 auto;
-    padding: 15px;
     z-index: 5;
     
 }
-
-.Oh {
-    position: relative;
-    display: inline-block;
-    font-size: 300px;
-    font-weight: 400;
-    font-style: normal;
-    bottom: 150px;
-    right: 50px;
-}
-.So{
-    position: relative;
-    display: inline-block;
-    font-size: 300px;
-    font-weight: 400;
-    font-style: normal;
-    bottom: 150px;
-    left: px;
+.main-word p{
+    margin-bottom: 200px;
+    gap: 10px;
 }
 .main-word img{
     position: relative;
@@ -144,9 +135,8 @@ nav{
 
 .menu-container button{
     position: relative;
-    top: 50px;
-    padding: 20px 10px;
-    font-size: 30px;
+    padding: 1vw 2vw;
+    font-size: 3vw;
     color: #394053;
     border: 5px solid #394053;
     border-radius: 5px;
