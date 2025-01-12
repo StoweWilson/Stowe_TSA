@@ -21,6 +21,28 @@ header{
     padding: 10px 0;
 }
 
+.logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.logo a{
+    font-weight: 600;
+    color: #f5f3ec;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    color: #2c6e49;
+    padding: 10px 20px;
+    background-color: #f5f3ec;
+    border-radius: 5px;
+}
+
 nav{
     text-align: center;
 }
@@ -83,14 +105,38 @@ nav{
     z-index: 5;
     
 }
+<<<<<<< HEAD
 .main-word p{
     margin-bottom: 200px;
     gap: 10px;
+=======
+
+.Oh {
+    position: relative;
+    display: inline-block;
+    font-size: 300px;
+    font-weight: 400;
+    font-style: normal;
+    bottom: 150px;
+    right: 50px;
+    z-index: 1;
+}
+.So{
+    position: relative;
+    display: inline-block;
+    font-size: 300px;
+    font-weight: 400;
+    font-style: normal;
+    bottom: 150px;
+    left: px;
+    z-index: 1;
+>>>>>>> d9b5bfc741aebd1b93ef8d83a2b0914a7a7fdc81
 }
 .main-word img{
     position: relative;
     display: inline-block;
     top: 150px;
+    z-index: 0;
 }
 
 .menu{
@@ -218,5 +264,80 @@ nav{
     width: 300px;
     margin: 10px;
     transition:  ease-in .5s;
+    
+}
+
+@media (max-width: 1366px) {
+    .Oh {
+        position: relative;
+        display: inline-block;
+        font-size: 200px;
+        font-weight: 400;
+        font-style: normal;
+        bottom: 150px;
+        right: 50px;
+    }
+    .So{
+        position: relative;
+        display: inline-block;
+        font-size: 300px;
+        font-weight: 400;
+        font-style: normal;
+        bottom: 150px;
+        left: px;
+    }
+    .main-word img{
+        position: relative;
+        display: inline-block;
+        top: 150px;
+    }
+    
+}
+
+@media (max-width: 640px){
+    .nav-links{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .Oh {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: 150px;
+        font-weight: 400;
+        font-style: normal;
+        bottom: 300px;
+        left: 250px;
+    }
+    .So{
+        position: relative;
+        display: inline-block;
+        font-size: 150px;
+        font-weight: 400;
+        font-style: normal;
+        top: 100px;
+        right: 75px;
+    }
+    .Oh img{
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        height: 40%;
+        top: 225px;
+        right: 125px;
+        z-index: 0;
+    }
+
+    .So img{
+        position: relative;
+        display: inline-block;
+        width: 40%;
+        height: fit-content;
+        top: 50px;
+        z-index: 0;
+    }
     
 }
