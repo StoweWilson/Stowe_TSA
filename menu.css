@@ -101,3 +101,22 @@ html{
 .breakfast a{
   font-size: 1.6rem;
 }
+
+.Lunch{
+  display: grid;
+  grid-template-columns: 2fr;
+  justify-content: right;
+  text-align: right;
+  align-items: right;
+  margin: 20px;
+}
+
+.Lunch h1{
+ font-size: 2rem;
+ margin: 10px;
+ 
+}
+
+.Lunch a{
+  font-size: 1.6rem;
+}
