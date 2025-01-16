@@ -56,6 +56,19 @@ nav{
     padding: 50px 0;
     text-align: center;
 }
+.logo a{
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 1.25rem;
+    color: #f5f3ec;
+    font-weight: 600;
+    top: 30px;
+    left: 20px;
+    text-decoration: none;
+  }
 
 .title{
     position: relative;
