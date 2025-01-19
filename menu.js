@@ -37,5 +37,17 @@ function showSlides(n) {
   }
   Lslides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+
+  let Dslides = document.getElementsByClassName("dinner_slide") ;
+  if (n > Dslides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = Dslides.length}
+  for (i = 0; i < Dslides.length; i++) {
+    Dslides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  Dslides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
 
