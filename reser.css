@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fraunces", serif;
+}
+body{
+    font-family: "Fraunces", serif;
+    background-color:white;
+}
+.nav-container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;  
+}
+
+header{
+    background-color: #2c6e49 ;
+    color: #f7f7f9;
+    padding: 10px 0;
+}
+
+.logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 20px;
+    top: 35px
+}
+
+.logo a{
+    font-weight: 600;
+    color: #f5f3ec;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.logo a:hover{
+    color: #2c6e49;
+    padding: 3vw 2vh;
+    background-color: #f5f3ec;
+    border-radius: 5px;
+}
+
+nav{
+    text-align: center;
+}
+
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vw;
+}
+
+.nav-links li{
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-links li a{
+    color: #f7f7f9;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-align: center;
+    z-index: 6;
+}
+
+.nav-links li a:hover{
+   text-decoration: underline;
+   color: #f7f7f9;
+   z-index: 6;
+}
+
+.Coming {
+    font-size: 10vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
