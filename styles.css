@@ -67,16 +67,19 @@ nav{
     display: inline-block;
     transition: background-color 0.3s;
     text-align: center;
+    z-index: 6;
 }
 
 .nav-links li a:hover{
    text-decoration: underline;
    color: #f7f7f9;
+   z-index: 6;
 }
 
 .content{
     padding: 50px 0;
     text-align: center;
+    z-index: 6;
 }
 
 .border{
@@ -97,30 +100,19 @@ nav{
     width: calc(100% - 80px);
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    font-size: 15vw;
-    font-weight: 400;
-    font-style: normal;
     height: 90vh;
     z-index: 5;
     
 }
-.main-word p{
+
+.main-word img{
     position: relative;
-    justify-self: center;
+   justify-self: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 20px;
-    margin-top: 50px;
-    bottom: 25%;
-    z-index: 5;
-    
-}
-.main-word img{
-   height: inherit;
-   width: 30vw;
-   margin-bottom: 20px;
-   z-index: 5;
+   height: fit-content;
+   width: 90vw;
+   z-index: 0;
    background: none;
   
 }
@@ -253,77 +245,3 @@ nav{
     
 }
 
-@media (max-width: 1366px) {
-    .Oh {
-        position: relative;
-        display: inline-block;
-        font-size: 200px;
-        font-weight: 400;
-        font-style: normal;
-        bottom: 150px;
-        right: 50px;
-    }
-    .So{
-        position: relative;
-        display: inline-block;
-        font-size: 300px;
-        font-weight: 400;
-        font-style: normal;
-        bottom: 150px;
-        left: px;
-    }
-    .main-word img{
-        position: relative;
-        display: inline-block;
-        top: 150px;
-    }
-    
-}
-
-@media (max-width: 640px){
-    .nav-links{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
-    }
-
-    .Oh {
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        font-size: 150px;
-        font-weight: 400;
-        font-style: normal;
-        bottom: 300px;
-        left: 250px;
-    }
-    .So{
-        position: relative;
-        display: inline-block;
-        font-size: 150px;
-        font-weight: 400;
-        font-style: normal;
-        top: 100px;
-        right: 75px;
-    }
-    .Oh img{
-        position: relative;
-        display: inline-block;
-        width: fit-content;
-        height: 40%;
-        top: 225px;
-        right: 125px;
-        z-index: 0;
-    }
-
-    .So img{
-        position: relative;
-        display: inline-block;
-        width: 40%;
-        height: fit-content;
-        top: 50px;
-        z-index: 0;
-    }
-    
-}

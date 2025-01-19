@@ -71,17 +71,41 @@ html{
     text-align: center;
 }
 .button-row{
+  display: flex;
   justify-content: center;
   align-items: center;
   justify-self: center;
   text-align: center;
+  gap: 20px;
+  padding: 10px 20px;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #2c6e49;
   margin-top: 30px;
+  
 }
-.button-row button{
-  padding: 15px 40px;
-  font-size: 1rem;
-  margin: 10px;
+
+.button-row a:visited{text-decoration: none; color: #2c6e49;}
+
+
+.title{
+  font-size: 4.5vw;
+  font-weight: 700;
+}
+.menu-body{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: right;
+  text-align: right;
+  align-items: right;
+  margin: 20px;
+  width: 45vw;
+  margin-left: 53vw;
+  height: inherit;
+  background-color: #f7f7f9;
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
 }
 .breakfast{
   display: grid;
@@ -90,11 +114,14 @@ html{
   text-align: right;
   align-items: right;
   margin: 20px;
+  
+  
 }
 
 .breakfast h1{
  font-size: 2rem;
  margin: 10px;
+ 
  
 }
 
@@ -119,4 +146,98 @@ html{
 
 .Lunch a{
   font-size: 1.6rem;
+}
+
+.menu-images{
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  justify-content: left;
+  align-items: left;
+  margin: 20px;
+  width: 45vw;
+  top: 400px;
+  margin-right: 53vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+}
+.breakfast_slide{
+  display: none;
+  width: 45vw;
+  border-radius: 10px;
+}
+
+.lunch_slides{
+  display: none;
+  width: 45vw;
+  border-radius: 10px;
+}
+
+.text{
+  color: #f5f3ec;
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: #717171;
+}
+
+.menu-images2{
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  justify-content: left;
+  align-items: left;
+  margin: 20px;
+  width: 45vw;
+  top: 1800px;
+  
+  margin-right: 53vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+}
+
+.lunch_dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .lunch_dot:hover{
+  background-color: #717171;
+}
+
+.lunch_text{
+  color: #f5f3ec;
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  text-align: center;
 }

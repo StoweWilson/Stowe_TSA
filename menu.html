@@ -24,13 +24,14 @@
 
 
     <div class="button-row">
-      <button href="breakfast">Breakfast</button>
-      <button href="lunch">Lunch</button>
-      <button>Dinner</button>
+      <a id="link" href="#breakfast">Breakfast</a>
+      <a id="link" href="#lunch">Lunch</a>
+      <a>Dinner</a>
     </div>
 
-    <div id="breakfast" class="breakfast">
-      
+  <div class="menu-body">
+    <div class="breakfast">
+      <div id="breakfast" class="title">Breakfast</div>
         <h1>Classic Breakfast Sandwich</h1>
           <a>Fluffy eggs, cooper sharp american cheese, arugula, potato bread. 9</a>
           <li><a>+ avocado $2.50</a></li>
@@ -41,11 +42,37 @@
         <h1>Créme Brûlée French Toast</h1>
           <a>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</a>
         
-        <h1>Ultimate Tofu Scramble</h1>
-          <a>Firm tofu, curry, peppers, onions, tomatoes, and spinach served with sliced avocado and your choice of side and toast. 17</a>  
+        <h1>Red Velvet Pancakes</h1>
+          <a>Three thick, square, red velvet pancakes with chocolate morsels and strawberry mascarpone layers, topped with maple syrup, chantilly cream and fresh strawberries. 18</a>  
+
+        <h1>Breakfast Taco</h1>
+          <a>JUST egg, organic sausage, charred onions
+            and peppers, pico de gallo, cabbage slaw,
+            cilantro dressing. 18</a>
+
+        <h1>Strawberries & Cream French Toast</h1>
+            <a>Strawberry syrup, whipped cream cheese. 15</a>
+
+        <h1>Blue Tropical Pancakes</h1>
+            <a>Seasonal fruit, sweet cream cheese glaze,
+              toasted coconut, maple syrup
+              Old Fashioned Pancakes. 12.50</a>
+
+        <h1>Jackfruit 'Crab' Cake Benedict</h1>
+            <a>Organic Poached Egg,Vegan Saffron,Hollandaise, Seasonal Green Salad. 19</a>
+
+        <h1>Lemon Lavender Waffles</h1>
+            <a>Persimmon,Whipped Vegan Cream and Maple Syrup. 17</a>
+
+        <h1>Surfer's Burrito</h1>
+          <a>Organic Eggs,Tater Tots, Chedder, Avocado, Jalapeno Creama Slaw and Salasa Quemada. 18.5</a>
+          <li><a>+ Impossible™ Chorizo +4</a></li>
+          <li><a>+ Impossible™ 'Sausage' (s) +4</a></li>
+             
     </div>
 
-    <div id="lunch" class="Lunch">
+    <div class="Lunch">
+      <div id="lunch" class="title">Lunch</div>
       <h1>Latin Chop Salad</h1>
           <a>Avocado, grilled corn, pico de gallo, red onion,
             black beans, tortilla strips, cilantro dressing. 13</a>
@@ -65,7 +92,95 @@
 
       <h1>Smoked Portobella Carpaccio</h1>
       <a>caper dressing, cracked pepper, nigella seed & fennel remoulade. 15</a>
+
+      <h1>CSG Reuben</h1>
+      <a>Russian dressing, swiss cheese, kraut, rye.
+        Choose house corned beef, house turkey, or seasonal veggies. 15</a>
+      <li><a> avocado +2.50</a></li>
+      <li><a> pork bacon +3.00</a></li>
+
+      <h1>Bye Felicia!</h1>
+      <a>Roasted and pickled seasonal veggies, artichoke relish, creamy balsamic mayo, arugula, raw onion, seeded hoagie. 14</a>
+      
+      <h1>Phoagie</h1>
+      <a>Hoisin eggplant (contains gluten), avo, fresh and frizzled onions, cilantro, pho sauce, seeded hoagie. 14</a>
+
+
     </div>
+  </div>
+    <div class="menu-images">
+      <div id="breakfast">
+        <div class="breakfast_slide">
+          <div class="numbertext">1/4</div>
+          <img src="break_img/ClassBreakSand.jpg" style="width:100%">
+          <div class="text">Classic Breakfast Sandwich</div>
+        </div>
+
+        <div class="breakfast_slide">
+          <div class="numbertext">2/4</div>
+          <img src="break_img/cremeFT.jpg" style="width:100%">
+          <div class="text">Créme Brûlée French Toast</div>
+        </div>
+
+        <div class="breakfast_slide">
+          <div class="numbertext">3/4</div>
+          <img src="break_img/RedVpan.jpg" style="width:100%">
+          <div class="text">Red Velvet Pancakes</div>
+        </div>
+
+        <div class="breakfast_slide">
+          <div class="numbertext">4/4</div>
+          <img src="break_img/S&C FT.jpg" style="width:100%">
+          <div class="text">Surfer's Burrito</div>
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="menu-images2">
+      <div id="lunch">
+        <div class="lunch_slide">
+          <div class="numbertext">1/4</div>
+          <img src="break_img/immTaco.jpg" style="width:100%">
+          <div class="lunch_text">Classic Breakfast Sandwich</div>
+        </div>
+
+        <div class="lunch_slide">
+          <div class="numbertext">2/4</div>
+          <img src="break_img/Chorizob.jpg" style="width:100%">
+          <div class="lunch_text">Créme Brûlée French Toast</div>
+        </div>
+
+        <div class="lunch_slide">
+          <div class="numbertext">3/4</div>
+          <img src="break_img/Felicia.jpg" style="width:100%">
+          <div class="lunch_text">Red Velvet Pancakes</div>
+        </div>
+
+        <div class="lunch_slide">
+          <div class="numbertext">4/4</div>
+          <img src="break_img" style="width:100%">
+          <div class="lunch_text">Surfer's Burrito</div>
+        </div>
+
+        <div style="text-align:center">
+          <span class="lunch_dot" onclick="currentSlide(1)"></span>
+          <span class="lunch_dot" onclick="currentSlide(2)"></span>
+          <span class="lunch_dot" onclick="currentSlide(3)"></span>
+          <span class="lunch_dot" onclick="currentSlide(4)"></span>
+        </div>
+
+      </div>
+    </div>
+  
+
 
 
 
