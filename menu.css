@@ -119,14 +119,14 @@ html{
 }
 
 .breakfast h1{
- font-size: 2rem;
+ font-size: 3vw;
  margin: 10px;
  
  
 }
 
 .breakfast a{
-  font-size: 1.6rem;
+  font-size: 2vw;
 }
 
 .Lunch{
@@ -139,13 +139,13 @@ html{
 }
 
 .Lunch h1{
- font-size: 2rem;
+ font-size: 3vw;
  margin: 10px;
  
 }
 
 .Lunch a{
-  font-size: 1.6rem;
+  font-size: 2vw;
 }
 
 .Dinner{
@@ -158,13 +158,13 @@ html{
 }
 
 .Dinner h1{
- font-size: 2rem;
+ font-size: 3vw;
  margin: 10px;
  
 }
 
 .Dinner a{
-  font-size: 1.6rem;
+  font-size: 2vw;
 }
 
 .menu-images{
@@ -173,14 +173,24 @@ html{
   grid-template-columns: 1fr;
   justify-content: left;
   align-items: left;
-  margin: 20px;
-  width: 45vw;
-  top: 400px;
+  width: 30vw;
+  top: 300px;
   margin-right: 53vw;
+  margin-left: 10vw;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   
 }
+.menu-images img,.menu-images2 img,.menu-images3 img{
+  width:30vw;
+  height: fit-content;
+  max-width: 1500px;
+  max-height: 1500px;
+  
+}
+
+
+ 
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -207,19 +217,25 @@ html{
 
 .breakfast_slide{
   display: none;
-  width: 45vw;
+  width: 30vw;
+  max-width: 1500px;
+  max-height: 1500px;
   border-radius: 10px;
 }
 
 .lunch_slides{
   display: none;
-  width: 45vw;
+  width: 30vw;
+  max-width: 1500px;
+  max-height: 1500px;
   border-radius: 10px;
 }
 
 .dinner_slide{
   display: none;
-  width: 45vw;
+  width: 30vw;
+  max-width: 1500px;
+  max-height: 1500px;
   border-radius: 10px;
 }
 
@@ -254,9 +270,11 @@ html{
   grid-template-columns: 1fr;
   justify-content: left;
   align-items: left;
-  margin: 20px;
-  width: 45vw;
-  top: 1800px;
+  margin-bottom:20px;
+  width: 30vw;
+  margin-left: 10vw;
+  
+  top:150vh;
   margin-right: 53vw;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -269,9 +287,10 @@ html{
   grid-template-columns: 1fr;
   justify-content: left;
   align-items: left;
-  margin: 20px;
-  width: 45vw;
-  top: 3150px;
+  margin-bottom:20px;
+  width: 30vw;
+  margin-left: 10vw;
+  top: 260vh;
   margin-right: 53vw;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
