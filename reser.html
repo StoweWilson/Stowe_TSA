@@ -27,7 +27,7 @@
     </div>
 </header>
 
-    <form action="reservation.php" method="post">
+    <form action="reservation.php" method="POST">
         <div class="elem-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
@@ -56,7 +56,7 @@
         <hr>
         <div class="elem-group">
           <label for="message">Anything Else?</label>
-          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
         </div>
         <button type="submit">Make The Reservation</button>
       </form>
@@ -79,5 +79,6 @@
         </div>
     </footer>
       <script src="reser.js"></script>
+    
     </body>
 </html>
