@@ -7,6 +7,7 @@
 body{
     font-family: "Fraunces", serif;
     background-color:white;
+    scroll-behavior: smooth;
 }
 .nav-container{
   max-width: 100%;
@@ -151,7 +152,11 @@ nav{
     border: 5px solid #2c6e49;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
     border-radius: 10px;   
+    transition: ease-in .5s;
+   
 }
+
+
 .menu-container h1{
     text-align: center;
     margin-top: 20px;
@@ -210,6 +215,7 @@ nav{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: ease .5s;
     
 }
 
@@ -308,6 +314,7 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: ease-in .5s;
 }
 
 .reservation-container{
