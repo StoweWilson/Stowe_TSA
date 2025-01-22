@@ -6,7 +6,7 @@
 }
 body{
     font-family: "Fraunces", serif;
-    background-color: #f5f3ec;
+    background-color: white;
 
 }
 .nav-container{
@@ -14,6 +14,7 @@ body{
     margin: 0 auto;
     padding: 0 20px;
     overflow: hidden;  
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
 }
   
 .nav-container{
