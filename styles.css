@@ -115,6 +115,7 @@ nav{
    width: 90vw;
    z-index: 0;
    background: none;
+   bottom: 15vh;
   
 }
 .menu {
