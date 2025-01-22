@@ -1,21 +1,24 @@
-var currentDateTime = new Date();
-var year = currentDateTime.getFullYear();
-var month = (currentDateTime.getMonth() + 1);
-var date = (currentDateTime.getDate() + 1);
 
-if(date < 10) {
-  date = '0' + date;
+/*const form = document.getElementById("reservation-form");
+form.addEventListener("submit", (event) => {
+  log.textContent = `Form Submitted!
+  Timestamp: ${event.timeStamp}`;
+  event.preventDefault();
+})
+*/
+
+function logSubmit(event) {
+  console.log("name:",document.getElementById("name").value);
+  console.log("email:",document.getElementById("email").value);
+  console.log("phone:",document.getElementById("phone").value);
+  console.log("people:",document.getElementById("adult").value);
+  console.log("date:",document.getElementById("date").value);
+  console.log("time:",document.getElementById("time").value);
+  console.log("message:",document.getElementById("message").value);
+  alert("Form has been submitted");
+  event.preventDefault();
 }
-if(month < 10) {
-  month = '0' + month;
-}
 
-var dateTomorrow = year + "-" + month + "-" + date;
-var checkinElem = document.querySelector("#checkin-date");
-var timeElem = document.querySelector("#time");
-
-checkinElem.setAttribute("min", dateTomorrow);
-
-checkinElem.onchange = function () {
-    checkoutElem.setAttribute("min", this.value);
-}
+console.log(document.getElementById("name").value);
+const form = document.getElementById("reservation-form");
+form.addEventListener("submit", logSubmit);
