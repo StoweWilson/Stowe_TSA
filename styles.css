@@ -6,20 +6,18 @@
 }
 body{
     font-family: "Fraunces", serif;
-    background-color:white;
+    background-color:#F4FAFF;
     scroll-behavior: smooth;
 }
 .nav-container{
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
   overflow: hidden;  
 }
 
 header{
-    background-color: #2c6e49 ;
-    color: #f7f7f9;
-    padding: 50px 0;
+    background-color: #F4FAFF ;
+    color: #297045;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 10;
 }
 
@@ -34,9 +32,11 @@ header{
 }
 
 .logo a{
-    font-weight: 600;
-    color: #f5f3ec;
-    text-decoration: none;
+    color: #297045;
+    font-family: "Fugaz One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     font-size: 2.5vw;
     margin-right: 5.25vw;
     z-index: 10;
@@ -70,9 +70,10 @@ nav{
 }
 
 .nav-links li a{
-    color: #f7f7f9;
+    color: #297045;
     text-decoration: none;
-    padding: 10px 20px;
+    font-family: "Fugaz One";
+    padding: 10px 10px;
     display: inline-block;
     transition: background-color 0.3s;
     text-align: center;
@@ -81,7 +82,6 @@ nav{
 
 .nav-links li a:hover{
    text-decoration: underline;
-   color: #f7f7f9;
    z-index: 10;
 }
 
@@ -91,12 +91,6 @@ nav{
     z-index: 10;
 }
 
-.border{
-    height: 112vh;
-    width: 100%;
-    background-color: #2c6e49;
-    z-index: 4;
-}
 
 
 .main-word{
@@ -104,11 +98,9 @@ nav{
     justify-self: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: #f7f7f9;
+    background-image: url("Vegetable_Background.png");
+    border-radius: 10px;
     width: calc(100% - 80px);
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     height: 107vh;
     z-index: 5;
     
@@ -119,13 +111,73 @@ nav{
    justify-self: center;
    justify-content: center;
    align-items: center;
-   height: fit-content;
-   width: 90vw;
+   height:fit-content;
+   width:30vw;
    z-index: 0;
-   
+   padding: 1rem 1rem;
    background: none;
-   bottom: 7vh;
+   bottom: 8vh;
+   border-radius: 25px;
 }
+
+.word img{
+    position: relative;
+   justify-self: center;
+   justify-content: center;
+   align-items: center;
+}
+@keyframes slide{
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+}
+.imagecarousel{
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.imagecarousel:before,
+.imagecarousel:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.imagecarousel:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.imagecarousel:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+.imagecarousel:hover .image-slides {
+    animation-play-state: paused;
+  }
+
+.image-slides{
+    display: inline-block;
+    animation: 35s silde infinite linear;
+}
+
+.image-slides img{
+    height: 50px;
+    margin: 0 40px;
+}
+
+
+
+
 .menu {
     position: relative;
     display: flex;
@@ -465,4 +517,17 @@ footer a{
 }
 
 
-
+@media only screen and (max-width: 500px) {
+    .main-word img{
+   position: relative;
+   justify-self: center;
+   justify-content: center;
+   align-items: center;
+   height:150vh;
+   width: 100vw;
+   z-index: 0;
+   padding: 1rem 1rem;
+   background: none;
+   bottom: 8vh;
+}
+  }
