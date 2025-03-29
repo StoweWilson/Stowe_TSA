@@ -1,12 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-items: baseline;
+}
+
+html {
+    padding: 0;
+}
 .sidebar{
-    height: 100%;
+    height: 100vh;
     width: 10vw;
     /* position: fixed; */
     z-index: 1;
-    top: 0;
-    left: 0;
     background-color: #57A773;
-    overflow-x: hidden;
     padding-top: 20px;
 }
 
