@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Fraunces", serif;
+    font-family: "Fugaz One", Arial, Helvetica, sans-serif;
 }
 body{
-    font-family: "Fraunces", serif;
+    /* font-family: "Fraunces", Arial, Helvetica, sans-serif; */
     background-color:#F4FAFF;
     scroll-behavior: smooth;
 }
@@ -94,16 +94,17 @@ nav{
 
 
 .main-word{
+    /* margin: auto; */
     display:grid;
     justify-self: center;
     justify-content: center;
     align-items: center;
     background-image: url("Vegetable_Background.png");
-    border-radius: 10px;
-    width: calc(100% - 80px);
+    background-size: cover;
+    /* border-radius: 10px; */
+    width: 100vw;
     height: 107vh;
-    z-index: 5;
-    
+    z-index: 5;    
 }
 
 .main-word img{
@@ -112,7 +113,7 @@ nav{
    justify-content: center;
    align-items: center;
    height:fit-content;
-   width:30vw;
+   width:60vw;
    z-index: 0;
    padding: 1rem 1rem;
    background: none;
@@ -126,23 +127,51 @@ nav{
    justify-content: center;
    align-items: center;
 }
-@keyframes slide{
-    from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-100%);
-      }
-}
-.imagecarousel{
+
+
+
+
+.banner {
+    width: 100%;
     overflow: hidden;
-    padding: 60px 0;
-    background: white;
     white-space: nowrap;
-    position: relative;
+    background: #297045;
+    padding: 10px 0;
 }
 
-.imagecarousel:before,
+.banner-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+.banner-item {
+    img {
+        max-height: 50px;
+    }
+    display: flex;
+    padding: 10px 20px;
+    background: #297045;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Animation for infinite scrolling */
+@keyframes scroll {
+from {
+    transform: translateX(0);
+}
+to {
+    transform: translateX(-50%);
+}
+}
+
+/* .imagecarousel:before,
 .imagecarousel:after{
     position: absolute;
     top: 0;
@@ -163,17 +192,7 @@ nav{
 }
 .imagecarousel:hover .image-slides {
     animation-play-state: paused;
-  }
-
-.image-slides{
-    display: inline-block;
-    animation: 35s silde infinite linear;
-}
-
-.image-slides img{
-    height: 50px;
-    margin: 0 40px;
-}
+  } */
 
 
 
@@ -518,16 +537,4 @@ footer a{
 
 
 @media only screen and (max-width: 500px) {
-    .main-word img{
-   position: relative;
-   justify-self: center;
-   justify-content: center;
-   align-items: center;
-   height:150vh;
-   width: 100vw;
-   z-index: 0;
-   padding: 1rem 1rem;
-   background: none;
-   bottom: 8vh;
-}
   }
