@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    justify-items: baseline;
+    width: 100vw;
     gap: 20px;
 }
 
@@ -39,35 +39,32 @@ html {
 
 
 
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+  } */
 
-.breakfasts{
+.breakfast{
     display: grid;
-    
+    /* position: relative; */
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 100vh;
+    grid-column: 500px;
+    gap: 20px;
+    padding: 20px;
+}
+.orderslide{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15vw;
-    height: 15vh;
-    background-color: #FDF0D5;
-    
-    
-}
-.orderslide p{
-
-font-size: 1rem;
-color: black;
-}
-
-.orderslide h1{
-    font-size: 2rem;
-    color: black;
-}
-
-
-.orderslide img{
-    width: 15vw;
     height: fit-content;
+    background-color: #FDF0D5;
+    padding: 5px;
+    border-radius: 4px;
+}
+.orderslide img {
+    max-width: 100px;
+    aspect-ratio: 1;
 }
