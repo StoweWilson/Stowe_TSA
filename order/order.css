@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Fugaz One", Arial, Helvetica, sans-serif;
 }
 
 
@@ -81,9 +82,30 @@ html {
 .orderslide button{
     background-color: #57A773;
     color: white;
-    width: 7rem;
+    width: 8rem;
     height: 2rem;
+    margin-top: 10px;
     border-radius: 10px;
-    border-color: #57A773;
+    border-style: solid;
+    border-color:#57A773;
+    border-width: 5px;
     font-size: 1rem;
+}
+
+.orderslide button:hover{
+    background-color: white;
+    color:#57A773;
+    transition: .5s;
+}
+
+.orderslide h1{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.orderslide p {
+    font-size: 1rem;
+    text-align: center;
+    color: grey;
 }
