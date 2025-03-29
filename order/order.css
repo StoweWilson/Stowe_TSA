@@ -6,7 +6,8 @@
 
 body {
     display: flex;
-    justify-items: baseline;
+    width: 100vw;
+    gap: 20px;
 }
 
 html {
@@ -38,27 +39,32 @@ html {
 
 
 
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+  } */
 
 .breakfast{
-    display: flex;
+    display: grid;
     /* position: relative; */
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 100vh;
+    grid-column: 500px;
+    gap: 20px;
+    padding: 20px;
 }
 .orderslide{
     /* position: relative; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 10vw;
-    height: 15vh;
+    height: fit-content;
     background-color: #FDF0D5;
+    padding: 5px;
+    border-radius: 4px;
 }
-
-.orderslide img{
-    width: 10vw;
+.orderslide img {
+    max-width: 100px;
+    aspect-ratio: 1;
 }
