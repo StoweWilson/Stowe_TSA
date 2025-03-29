@@ -99,6 +99,7 @@ nav{
     justify-content: center;
     align-items: center;
     background-image: url("Vegetable_Background.png");
+    background-size: cover;
     border-radius: 10px;
     width: calc(100% - 80px);
     height: 107vh;
@@ -112,7 +113,7 @@ nav{
    justify-content: center;
    align-items: center;
    height:fit-content;
-   width:30vw;
+   width:35vw;
    z-index: 0;
    padding: 1rem 1rem;
    background: none;
