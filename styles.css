@@ -101,13 +101,8 @@ nav{
     align-items: center;
     background-image: url("Vegetable_Background.png");
     background-size: cover;
-<<<<<<< HEAD
-    border-radius: 10px;
-    width: calc(100% - 80px);
-=======
     /* border-radius: 10px; */
     width: 100vw;
->>>>>>> ebf58360162b557c01c07c9613bc8577867fc8d5
     height: 107vh;
     z-index: 5;    
 }
@@ -118,11 +113,7 @@ nav{
    justify-content: center;
    align-items: center;
    height:fit-content;
-<<<<<<< HEAD
-   width:35vw;
-=======
    width:60vw;
->>>>>>> ebf58360162b557c01c07c9613bc8577867fc8d5
    z-index: 0;
    padding: 1rem 1rem;
    background: none;
