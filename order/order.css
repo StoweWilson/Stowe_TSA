@@ -7,6 +7,7 @@
 body {
     display: flex;
     justify-items: baseline;
+    gap: 20px;
 }
 
 html {
@@ -43,22 +44,30 @@ html {
     .sidenav a {font-size: 18px;}
   }
 
-.breakfast{
-    display: flex;
-    /* position: relative; */
+.breakfasts{
+    display: grid;
+    
     justify-content: center;
     align-items: center;
-}
-.orderslide{
-    /* position: relative; */
-    justify-content: center;
-    align-items: center;
-
-    width: 10vw;
+    width: 15vw;
     height: 15vh;
     background-color: #FDF0D5;
+    
+    
+}
+.orderslide p{
+
+font-size: 1rem;
+color: black;
 }
 
+.orderslide h1{
+    font-size: 2rem;
+    color: black;
+}
+
+
 .orderslide img{
-    width: 10vw;
+    width: 15vw;
+    height: fit-content;
 }
