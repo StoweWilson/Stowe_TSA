@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="sidebar">
+    <div class="top">
         <a id="breakfast">
             <img src="waffle_icon.png" alt="breakfast icon">
         </a>
@@ -21,6 +22,11 @@
         <a id="Dinner">
             <img src="dinnner.png" alt="Dinner icon">
         </a>
+    </div>
+        <button id="openbutton" onclick="opencart()">
+            <img src="car.png" alt="cart button">
+           
+        </button>
     </div>
 
     <div class="breakfasts">
@@ -32,9 +38,42 @@
                 <h1>Créme Brûlée French Toast</h1>
                 <p>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</p>
             </div>
-            <button>Add to cart</button>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+        
+        <div class="orderslide">
+            <div>
+                <img src="breakfasr_sand.avif" alt="breakfast sandwich">
+            </div>
+            <div>
+                <h1>Classic Breakfast Sandwich</h1>
+                <p>Fluffy eggs, cooper sharp american cheese, arugula, potato bread. 9</p>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="orderslide">
+            <div>
+                <img src="redvelevt pancakes.avif" alt="French Toast">
+            </div>
+            <div>
+                <h1>Red Velvet Pancakes</h1>
+                <p>Three thick, square, red velvet pancakes with chocolate morsels and strawberry mascarpone layers, topped with maple syrup, chantilly cream and fresh strawberries. 18</p>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
         </div>
         
     </div>
+    <div id="cart" class="cartpanel" onclick="closenav()">
+        
+        <div id="cart-items">
+
+        </div>
+        <div id="total">
+            Total Price: $0.00
+        </div>
+        <button id="checkout">Checkout</button>
+    </div>
 </body>
+<script src="order.js"></script>
 </html>

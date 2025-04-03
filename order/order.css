@@ -16,15 +16,23 @@ html {
     padding: 0;
 }
 .sidebar{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
     width: 10vw;
     /* position: fixed; */
     z-index: 1;
     background-color: #57A773;
     padding-top: 20px;
+    
 }
-
-.sidebar a{
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.top a{
+    
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -32,13 +40,19 @@ html {
     display: block;
 }
 .sidebar img{
-    width: 5vw;
+    width: 8vw;
     height: fit-content;
 }
 .sidebar a:hover{
     text-decoration: underline;
 }
 
+.sidebar button{
+    position: relative;
+    bottom: 50;
+    width: 9vw;
+    height: 5vh
+}
 
 
 /* @media screen and (max-height: 450px) {
@@ -46,7 +60,7 @@ html {
     .sidenav a {font-size: 18px;}
   } */
 
-.breakfast{
+.breakfasts{
     display: grid;
     /* position: relative; */
     grid-template-columns: 1fr 1fr 1fr ;
@@ -64,7 +78,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 20rem;
-    height: fit-content;
+    height: 20rem;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
@@ -74,9 +88,10 @@ html {
     margin-top: 10px;
 }
 .orderslide img {
-    max-width: 10rem;
+    max-width: 20rem;
     width: 10rem;
     aspect-ratio: 1;
+    margin-bottom: 10px;
 }
 
 .orderslide button{
@@ -109,3 +124,31 @@ html {
     text-align: center;
     color: grey;
 }
+
+.cartpanel{
+    height: 250px;
+    width: 0;
+    z-index: 1;
+    background-color: #57A773;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.cartpanel .closebtn {
+    
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #57A773;
+    
+    padding: 10px 15px;
+    border: none;
+  }
+  
+ 
