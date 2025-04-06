@@ -1,50 +1,49 @@
-const cartItemsContainer = document.getElementById('cart-items');
-const totalPriceElement = document.getElementById('total');
-let cart = [];
-let totalPrice = 0;
+let checkout_modal = document.getElementById('checkout');
+let cart_view = document.getElementById('cart');
+let total_view = document.getElementById('total');
+let cart = {};
 
-const menuItems = [
-    { name: 'Créme Brûlée French Toast', price: 18.00 },
-    { name: 'Classic Breakfast Sandwich', price: 9.00 },
-    { name: 'Red Velvet Pancakes', price: 18.00 }
-];
+function addToCart(name, price){
+    if(name in cart){
+        cart[name][2]+=1
 
-
-document.querySelectorAll('.add-to-cart').forEach((button, index) => {
-    button.addEventListener('click', () => {
-        addToCart(menuItems[index]);
-    });
-});
-
-function addToCart(item) {
-    cart.push(item);
-    totalPrice += item.price;
-    updateCart();
+    } else {
+        cart[name] = [name,price, 1]
+    }
 }
 
-function updateCart() {
-    cartItemsContainer.innerHTML = ''; // Clear previous items
-    cart.forEach((item, index) => {
-        const cartItem = document.createElement('div');
-        cartItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-        cartItemsContainer.appendChild(cartItem);
-    });
-    totalPriceElement.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+function toggleCartView() {
+    cart_view.innerHTML = ""
+    total_view.innerHTML =""
+    checkout_modal.classList.toggle("active")
+    let total = 0
+    if (Object.values(cart).length == 0) {
+        cart_view.innerHTML = "Nothing In Cart, add some items to get started!"
+    } else {
+        for (key in cart) {
+            let name = cart[key][0]
+            let price = cart[key][1]
+            let quantity = cart[key][2]
+            total += price*quantity
+            cart_view.innerHTML += ` 
+                <li><div class="name">${name}</div><div class="price">${price.toFixed(2)}(${quantity})</div></li>
+            `
+        }
+        total_view.innerHTML +=  `
+            <li><div class=name><b>Total: </b></div><div class="price">$${total.toFixed(2)}</div></li>
+        `
+    }
+}   
+
+function completeOrder() {
+    if (Object.values(cart).length == 0) {
+        alert("Add some items before you checkout")
+    } else {
+        alert("Thanks for your order!")
+        cart={};
+        total = 0;
+    }
 }
 
-// Clear the cart when the "Checkout" button is clicked
-document.getElementById('checkout').addEventListener('click', () => {
-    alert(`Your total is $${totalPrice.toFixed(2)}. Thank you for your order!`);
-    cart = [];
-    totalPrice = 0;
-    updateCart();
-});
 
-function opencart() {
-    document.getElementById("cart").style.width = "500px";
-  }
-  
-  /* Set the width of the sidebar to 0 (hide it) */
-  function closenav() {
-    document.getElementById("cart").style.width = "0";
-  }
+

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Fugaz One", Arial, Helvetica, sans-serif;
+    
 }
 
 
@@ -21,6 +22,7 @@ html {
     justify-content: space-between;
     max-height: 100vh;
     width: 10vw;
+    max-width: 10vw;
     /* position: fixed; */
     z-index: 1;
     background-color: #57A773;
@@ -31,9 +33,13 @@ html {
     display: flex;
     flex-direction: column;
 }
+.top img{
+    max-width: 10vw;
+    width: 6vw;
+}
 .top a{
     
-    padding: 6px 8px 6px 16px;
+    padding: 3px 5px 2px 3px;
     text-decoration: none;
     font-size: 25px;
     color: #FDF0D5;
@@ -88,8 +94,9 @@ html {
     margin-top: 10px;
 }
 .orderslide img {
-    max-width: 20rem;
-    width: 10rem;
+    max-width: 15vw;
+    /* width: 15vw; */
+    height: 12vh;
     aspect-ratio: 1;
     margin-bottom: 10px;
 }
@@ -125,30 +132,52 @@ html {
     color: grey;
 }
 
-.cartpanel{
-    height: 250px;
-    width: 0;
-    z-index: 1;
-    background-color: #57A773;
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s;
+#checkout{
+    display: none;
 }
 
-.cartpanel .closebtn {
-    
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+#checkout.active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #111111d3;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .card {
+        justify-content: space-between;
+        border-radius: 10px;
+        width: 80%;
+        height: 50%;
+        padding: 20px 20px;
+        display: flex;
+        background-color: whitesmoke;
+        color: #111;
+        flex-direction: column;
 
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #57A773;
-    
-    padding: 10px 15px;
-    border: none;
-  }
-  
- 
+        #cart {
+            list-style: none;
+            li {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    }
+
+    .x-icon {
+        align-self: last baseline;
+    }
+}
+
+
+#cart li {
+    border: #111;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px;
+}

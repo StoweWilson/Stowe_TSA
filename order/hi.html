@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        padding: 20px 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    button {
+        background-color: dodgerblue;
+        color: white;
+        border: dodgerblue 1px solid;
+        border-radius: 10px;
+        font-weight: 600;
+        padding: 10px 20px;
+
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    #checkout {
+        display: none;
+    }
+
+    #checkout.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        background-color: #111111d3;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        .card {
+            justify-content: space-between;
+            border-radius: 10px;
+            width: 80%;
+            height: 50%;
+            padding: 20px 20px;
+            display: flex;
+            background-color: whitesmoke;
+            color: #111;
+            flex-direction: column;
+
+            #cart {
+                list-style: none;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+        }
+
+        .x-icon {
+            align-self: last baseline;
+        }
+    }
+
+    .x-icon {
+
+        display: flex;
+        flex-direction: column;
+        span {
+            border-radius: 10px;
+            background-color: #111;
+            width: 40px;
+            height: 8px;
+        }
+
+        span:nth-child(1) {
+            transform: rotateZ(45deg) translateY(6px);
+        }
+        span:nth-child(2) {
+            transform: rotateZ(-45deg) translateY(-6px);
+        }
+    }
+
+    .x-icon:hover {
+        cursor: pointer;
+    }
+</style>
+<body>
+    <button onclick="toggleCartView()">View Cart</button>
+    <div class="menu-items">
+        <div class="menu-item">
+            <h1>hamburger</h1>
+            <p>4.99</p>
+            <button onclick="addToCart('hamburger', 4.99)">Add to cart</button>
+        </div>
+        <div class="menu-item">
+            <h1>hotdog</h1>
+            <p>2.99</p>
+            <button onclick="addToCart('hotdog', 2.99)">Add to cart</button>
+        </div>
+    </div>
+    <div id="checkout" class="modal">
+        <div class="card">
+            <div class="x-icon" onclick="toggleCartView()">
+                <span></span>
+                <span></span>
+            </div>
+            <ul  id="cart">
+
+            </ul>
+            <button onclick="completeOrder()">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
+<script >
+    let checkout_modal = document.getElementById("checkout")
+    let cart_view = document.getElementById("cart")
+    let cart = {}
+    // name, price, ammount
+    function addToCart(name, price) {
+        if (name in cart) {
+            cart[name][2] +=1
+        } else {
+            cart[name] = [name, price, 1]
+        }
+    }
+
+    function toggleCartView() {
+        cart_view.innerHTML = ""
+        checkout_modal.classList.toggle("active")
+        let total = 0
+        if (Object.values(cart).length == 0) {
+            cart_view.innerHTML = "Nothing In Cart, add some items to get started!"
+        } else {
+            for (key in cart) {
+                let name = cart[key][0]
+                let price = cart[key][1]
+                let quantity = cart[key][2]
+                total += price*quantity
+                cart_view.innerHTML += ` 
+                    <li><div class="name">${name}</div><div class="price">${price.toFixed(2)}(${quantity})</div></li>
+                `
+            }
+            cart_view.innerHTML +=  `
+                <li><div class=name><b>Total: </b></div><div class="price">$${total.toFixed(2)}</div></li>
+            `
+        }
+    }   
+
+    function completeOrder() {
+        if (Object.values(cart).length == 0) {
+            alert("Add some items before you checkout")
+        } else {
+            alert("Thanks for your order!")
+        }
+    }
+</script>
