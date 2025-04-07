@@ -21,12 +21,13 @@ function toggleCartView() {
         cart_view.innerHTML = "Nothing In Cart, add some items to get started!"
     } else {
         for (key in cart) {
-            let name = cart[key][0]
-            let price = cart[key][1]
-            let quantity = cart[key][2]
+            let img = cart[key][0]
+            let name = cart[key][1]
+            let price = cart[key][2]
+            let quantity = cart[key][3]
             total += price*quantity
             cart_view.innerHTML += ` 
-                <li><div class="name">${name}</div><div class="price">${price.toFixed(2)}(${quantity})</div></li>
+                <li><img src ="${img}"></img><div class="name">${name}</div><div class="price">${price.toFixed(2)}(${quantity})</div></li>
             `
         }
         total_view.innerHTML +=  `

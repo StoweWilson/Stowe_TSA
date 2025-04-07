@@ -32,8 +32,11 @@
                 </div>
             </a>
         </div>
-        <button onclick="toggleCartView()">
+        <button onclick="toggleCartView()" >
             <img src="car.png" alt="cart button"> 
+            <div class="hover-effect">
+                Checkout
+            </div>
         </button>
     </div>
 
@@ -42,7 +45,7 @@
                 <img src="frenchToast.avif" alt="French Toast">
                 <h1>Créme Brûlée French Toast</h1>
                 <p>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</p>
-            <button onclick="addToCart('Créme Brûlée French Toast', 18)">Add to cart</button>
+            <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
         </div>
         
         <div class="orderslide">
@@ -58,7 +61,7 @@
             
                 <h1>Red Velvet Pancakes</h1>
                 <p>Three thick, square, red velvet pancakes with chocolate morsels and strawberry mascarpone layers, topped with maple syrup, chantilly cream and fresh strawberries. 18</p>
-                <button onclick="addToCart('Red Velvet Pancakes', 18)">Add to cart</button>
+                <button onclick="addToCart('redvelevt pancakes.avif', 'Red Velvet Pancakes', 18)">Add to cart</button>
             
         </div>
         
