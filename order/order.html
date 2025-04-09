@@ -39,32 +39,64 @@
     </div>
 
     <div class="breakfasts">
-        <div class="orderslide">
-                <img src="frenchToast.png" alt="French Toast">
+        <div class="orderslides">
+            <div class="orderslide">
+            <div class="top">
+                <img src="breakfasr_sand.png" alt="Breakfast Sandwich">
+    
             </div>
-            <div class="bottom">
-                <h1>Créme Brûlée French Toast</h1>
-                <p>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</p>
-            <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
-        </div>
-        
-        <div class="orderslide">
-                <img src="breakfasr_sand.png" alt="breakfast sandwich">
-                <h1>Classic Breakfast Sandwich</h1>
-                <p>Fluffy eggs, cooper sharp american cheese, arugula, potato bread. 9</p>
-                <button onclick="addToCart('frenchToast.avif','Classic Breakfast Sandwich', 9)">Add to cart</button>
-        </div>
-
-        <div class="orderslide">
-           
-                <img src="redvelevt pancakes.png" alt="French Toast">
+                <div class="bottom">
+                    <h1>Classic Breakfast Sandwich $9</h1>
+                    <div class="buttons">
+                        <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
+                        <button onclick="toggleDescription(1)">description</button>
+                    </div>
+                    <div class="description-container" id="description_1" onclick="toggleDescription(1)">
+                        <div class="description-card">
+                            <p>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-                <h1>Red Velvet Pancakes</h1>
-                <p>Three thick, square, red velvet pancakes with chocolate morsels and strawberry mascarpone layers, topped with maple syrup, chantilly cream and fresh strawberries. 18</p>
-                <button onclick="addToCart('redvelevt pancakes.avif', 'Red Velvet Pancakes', 18)">Add to cart</button>
-            
-        </div>
         
+            <div class="orderslide">
+                <div class="top">
+                    <img src="frenchToast.png" alt="French Toast">
+        
+                </div>
+                <div class="bottom">
+                    <h1>Créme Brûlée French Toast $18</h1>
+                    <div class="buttons">
+                        <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
+                        <button onclick="toggleDescription(1)">description</button>
+                    </div>
+                    <div class="description-container" id="description_1" onclick="toggleDescription(1)">
+                        <div class="description-card">
+                            <p>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="orderslide">
+                <div class="top">
+                    <img src="redvelevt pancakes.png" alt="French Toast">
+        
+                </div>
+                <div class="bottom">
+                    <h1>Créme Brûlée French Toast $18</h1>
+                    <div class="buttons">
+                        <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
+                        <button onclick="toggleDescription(1)">description</button>
+                    </div>
+                    <div class="description-container" id="description_1" onclick="toggleDescription(1)">
+                        <div class="description-card">
+                            <p>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
     </div>
     <div id="checkout" class="cartpanel" onclick="toggleCartView()">
         <div class="card">
