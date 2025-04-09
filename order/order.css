@@ -42,7 +42,8 @@ html {
     position: relative;
     bottom: 50;
     width: 9vw;
-    height: 5vh
+    height: 5vh;
+    all: unset;
 }
 .items {
     width: 10vw;
@@ -105,10 +106,10 @@ html {
     /* position: relative; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 20rem;
-    height: 20rem;
+    width: 25vw;
+    height: 35vh;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
@@ -118,9 +119,9 @@ html {
     margin-top: 10px;
 }
 .orderslide img {
-    max-width: 15vw;
-    /* width: 15vw; */
-    height: 12vh;
+   height: 18vh;
+    width: 25.7vw; 
+   border-radius: 10px 10px 0px 0px;
     aspect-ratio: 1;
     margin-bottom: 10px;
 }
