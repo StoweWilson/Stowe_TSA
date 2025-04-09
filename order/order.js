@@ -3,12 +3,12 @@ let cart_view = document.getElementById('cart');
 let total_view = document.getElementById('total');
 let cart = {};
 
-function addToCart(name, price){
+function addToCart(img,name, price){
     if(name in cart){
-        cart[name][2]+=1
+        cart[name][3]+=1
 
     } else {
-        cart[name] = [name,price, 1]
+        cart[name] = [img,name,price, 1]
     }
 }
 
@@ -27,7 +27,7 @@ function toggleCartView() {
             let quantity = cart[key][3]
             total += price*quantity
             cart_view.innerHTML += ` 
-                <li><img src ="${img}"></img><div class="name">${name}</div><div class="price">${price.toFixed(2)}(${quantity})</div></li>
+                <li><img src ="${img}"></img><div class="name">${name}</div><div class="price">${price.toFixed(2)}  QTY:(${quantity})</div></li>
             `
         }
         total_view.innerHTML +=  `

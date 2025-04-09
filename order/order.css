@@ -119,8 +119,8 @@ html {
     margin-top: 10px;
 }
 .orderslide img {
-   height: 18vh;
-    width: 25.7vw; 
+   width: 100%;
+    overflow: hidden;
    border-radius: 10px 10px 0px 0px;
     aspect-ratio: 1;
     margin-bottom: 10px;
@@ -155,6 +155,7 @@ html {
     font-size: 1rem;
     text-align: center;
     color: grey;
+    text-overflow: ellipsis;
 }
 
 #checkout{
@@ -215,4 +216,18 @@ html {
 #cart li img{
     max-width: 5vw;
     max-height: 5vh;
+}
+
+
+#img{
+    z-index: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #111111d3;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
