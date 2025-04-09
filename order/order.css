@@ -117,7 +117,56 @@ html {
     border-color:#57A773;
     border-width: 5px;
     margin-top: 10px;
+    gap: 10px;
+
+    .top {
+        height: 50%;
+
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-height: 50%;
+        max-width: 100%;
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            /* gap: 4px; */
+        }
+        
+    }
+    .description-container {
+        display: none;
+    }
+    .description-container.active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #111111d3;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 900;
+        .description-card {
+            width: 70%;
+            background-color: whitesmoke;
+            padding: 30px;
+            p {
+                color: black !important;
+
+            }
+            border-radius: 10px;
+        }
+        
+
+    }
 }
+
 .orderslide img {
    width: 100%;
     overflow: hidden;

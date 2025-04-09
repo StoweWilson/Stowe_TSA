@@ -39,12 +39,13 @@
     </div>
 
     <div class="breakfasts">
-        <div id="more" class="orderslide">
+        <div class="orderslide">
                 <img src="frenchToast.png" alt="French Toast">
+            </div>
+            <div class="bottom">
                 <h1>Créme Brûlée French Toast</h1>
                 <p>Sliced challah in vanilla bean custard topped with berry compote, vanilla anglaise, maple syrup, chantilly cream and fresh berries. 18</p>
             <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
-            <button onclick="viewmore()"></button>
         </div>
         
         <div class="orderslide">
@@ -86,3 +87,12 @@
 </body>
 <script src="order.js"></script>
 </html>
+
+<script>
+    function toggleDescription(id){
+        let description = document.getElementById(`description_${id}`)
+        description.classList.toggle("active")
+    }
+
+
+</script>
