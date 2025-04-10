@@ -1,6 +1,7 @@
 let checkout_modal = document.getElementById('checkout');
 let cart_view = document.getElementById('cart');
 let total_view = document.getElementById('total');
+
 let cart = {};
 
 function addToCart(img,name, price){
@@ -44,6 +45,10 @@ function completeOrder() {
         cart={};
         total = 0;
     }
+}
+
+function toggleDescription(){
+
 }
 
 
