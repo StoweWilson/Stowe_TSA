@@ -6,6 +6,10 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 })
 */
+function toggleNav() {
+  menu.classList.toggle("active")
+  ham.classList.toggle("active")
+}
 
 function logSubmit(event) {
   console.log("name:",document.getElementById("name").value);
@@ -22,3 +26,4 @@ function logSubmit(event) {
 console.log(document.getElementById("name").value);
 const form = document.getElementById("reservation-form");
 form.addEventListener("submit", logSubmit);
+

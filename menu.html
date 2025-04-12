@@ -9,23 +9,22 @@
     <title>Menu</title>
 </head>
 <body>
-  <header>
-        
-    <div class="nav-container">
-        <nav>
-            
-            <ul class="nav-links">
-                <ul class="logo">
-                    <li><a href="index.html">OhSoVegan</a></li>
-                </ul>
-                <li><a href="menu.html">Menus</a></li>
-                <li><a href="story.html">Our Story</a></li>
-                <li><a href="reser.html">Reservations</a></li>
-                <li><a href="ref.html">Refrences</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+  <nav>
+    <h1>Oh So Vegan</h1>
+    <ul id="menu" >
+        <li><a onclick="toggleNav()" href="index.html">Home</a></li>
+        <li><a onclick="toggleNav()" href="menu.html">Menu</a></li>
+        <li><a onclick="toggleNav()" href="reser.html">Reservation</a></li>
+        <li><a onclick="toggleNav()" href="order/order.html">Order</a></li>
+        <li><a onclick="toggleNav()" href="ref.html">Refrences</a></li>
+
+
+    </ul>
+    <button id="ham" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+    </button>
+</nav>
 
 
     <div class="button-row">
@@ -284,7 +283,8 @@
   </div>
 </footer>
 
-    <script src="menu.js"></script>
+    
     
 </body>
+<script src="menu.js"></script>
 </html>

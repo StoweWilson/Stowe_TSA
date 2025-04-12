@@ -198,7 +198,7 @@ to {
     text-align: center;
     font-size: 1.5vw;
     font-weight: 400;
-    padding: 20px 40px;
+    padding: 10px 20px;
     color: #f5f3ec;
 }
 
@@ -206,13 +206,18 @@ to {
     text-align: center;
     font-weight: 700;
     font-size: 2.7vw;
-    color: #f5f3ec;
-   
+    color: #F4FAFF;
+    padding: 5px 10px;
+    background-color: #2c6e49;
+    border: 5px solid #F4FAFF;
+    border-radius: 10px;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .menu-container a:hover{
-    text-decoration: underline;
+    background-color: #F4FAFF;
+    color: #2c6e49;
     transition: ease-in-out .3s;
 }
 
@@ -232,32 +237,6 @@ to {
     box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
     border-radius: 10px 0px 0px 10px;   
     
-}
-
-.things{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    transition: ease .5s;
-    
-}
-
-.things-block{
-    display: flex;
-    flex-direction: row;
-    font-size: 3vw;
-    font-weight:400;
-    padding: 20px 30px;
-    margin: 13px;
-    background-color: #2c6e49;
-    color: #f5f3ec;
-    border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 .story{
@@ -306,7 +285,7 @@ to {
     text-align: center;
     font-size: 1.8vw;
     font-weight: 400;
-    padding: 20px 40px;
+    padding: 10px 20px;
     color: #f5f3ec;
 }
 
@@ -322,14 +301,20 @@ to {
     text-align: center;
     font-weight: 700;
     font-size: 2.7vw;
-    color: #f5f3ec;
-    
+    color: #F4FAFF;
+    padding: 5px 10px;
+    background-color: #2c6e49;
+    border: 5px solid #F4FAFF;
+    border-radius: 10px;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .story a:hover{
-    text-decoration: underline;
+    background-color: #F4FAFF;
+    color: #2c6e49;
     transition: ease-in-out .3s;
+    
 }
 
 .reservation{
@@ -366,7 +351,7 @@ to {
     text-align: center;
     font-size: 1.8vw;
     font-weight: 400;
-    padding: 20px 40px;
+    padding: 10px 20px;
     color: #f5f3ec;
 }
 
@@ -382,13 +367,18 @@ to {
     text-align: center;
     font-weight: 700;
     font-size: 2.7vw;
-    color: #f5f3ec;
-    
+    color: #F4FAFF;
+    padding: 5px 10px;
+    background-color: #2c6e49;
+    border: 5px solid #F4FAFF;
+    border-radius: 10px;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .reservation-container a:hover{
-    text-decoration: underline;
+    background-color: #F4FAFF;
+    color: #2c6e49;
     transition: ease-in-out .3s;
 }
 
@@ -536,6 +526,7 @@ footer a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 20px;
         li {
             margin: 0 20px 0 0;
@@ -543,7 +534,7 @@ footer a{
             
             a {
                 text-decoration: none;
-                font-size: 4.5rem;
+                font-size: 3.5rem;
                 font-weight: 600;
                 color: #2c6e49;
             }
@@ -607,10 +598,18 @@ footer a{
     .menu-container p {
     
         text-align: center;
-        font-size: 2vw;
+        font-size: 2.5vw;
         font-weight: 400;
         
         color: #f5f3ec;
+    }
+    .menu-container h1{
+        font-size: 5.5vw;
+    }
+
+    .menu-container a{
+        border: 3px solid #F4FAFF;
+        border-radius: 5px;
     }
     .menu img{
         display: flex;
@@ -672,6 +671,23 @@ footer a{
     border-radius: 0px 0px 10px 10px;   
 
 }
+.story-container p {
+   
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding: 20px 40px;
+    color: #f5f3ec;
+}
+
+.story-container h1{
+    font-size: 5.5vw;
+}
+
+.story-container a{
+    border: 3px solid #F4FAFF;
+    border-radius: 5px;
+}
 .reservation{
     position: relative;
     display: flex;
@@ -715,6 +731,28 @@ footer a{
    
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     border-radius: 10px 10px 0px 0px;
+}
+
+.reservation-container p {
+    
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding: 20px 40px;
+    color: #f5f3ec;
+}
+
+.reservation-container h1{
+    text-align: center;
+    
+    font-size: 5.5vw;
+    font-weight: 700;
+    color: #f5f3ec;
+}
+
+.reservation-container a{
+    border: 3px solid #F4FAFF;
+    border-radius: 5px;
 }
 }
   /* tablet */
