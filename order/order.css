@@ -8,7 +8,8 @@
 
 body {
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    max-width: 100vw;
     gap: 20px;
    
 }
@@ -42,6 +43,9 @@ nav {
     #ham:hover {
         cursor: pointer;
     }
+}
+.flex{
+    display: flex;
 }
 
 .sidebar{
@@ -173,7 +177,7 @@ nav {
 
 #checkout.active{
     z-index: 900;
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -192,6 +196,7 @@ nav {
         background-color: whitesmoke;
         color: #111;
         flex-direction: column;
+        overflow-y: scroll;
 
         #cart {
             list-style: none;
@@ -245,7 +250,7 @@ nav {
 }
 .description-container.active {
     z-index: 900;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
