@@ -97,6 +97,7 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 10px 20px;
+    overflow-y: scroll;
 
     .orderslide {
         box-shadow: 0 0 10px #111;
@@ -138,26 +139,6 @@ html {
         }
     }
 }
-
-@media only screen and (max-width: 900px) {
-    .orderslides {
-        grid-template-columns: 1fr 1fr;
-
-        .buttons {
-            flex-direction: column;
-        }
-    }
-}
-@media only screen and (max-width: 600px) {
-    .orderslides {
-        grid-template-columns: 1fr;
-
-        .buttons {
-            flex-direction: column;
-        }
-    }
-}
-
 #checkout{
     display: none;
 }
@@ -231,3 +212,70 @@ html {
     justify-content: center;
     align-items: center;
 }
+.description-container{
+    display: none;
+}
+.description-container.active {
+    z-index: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #111111d3;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .description-card {
+        justify-content: space-between;
+        border-radius: 10px;
+        width: 70vw;
+        height: 5vh;
+        padding: 20px 20px;
+        display: flex;
+        background-color: whitesmoke;
+        color: #111;
+        flex-direction: column;
+
+
+    }
+    .description-card p {
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+
+
+}
+/* tablet */
+@media only screen and (max-width: 991px) {
+    .orderslides {
+        grid-template-columns: 1fr 1fr;
+
+        .buttons {
+            flex-direction: column;
+        }
+    }
+}
+/* computer*/
+@media only screen and (max-width: 1200px) {
+    .orderslides {
+        grid-template-columns: 1fr 1fr;
+
+        .buttons {
+            flex-direction: column;
+        }
+    }
+}
+/* phone */
+@media only screen and (max-width: 480px) {
+    .orderslides {
+        grid-template-columns: 1fr;
+
+        .buttons {
+            flex-direction: column;
+        }
+    }
+}
+

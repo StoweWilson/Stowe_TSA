@@ -1,6 +1,7 @@
 let checkout_modal = document.getElementById('checkout');
 let cart_view = document.getElementById('cart');
 let total_view = document.getElementById('total');
+let description_view =document.getElementById('description');
 
 let cart = {};
 
@@ -47,9 +48,11 @@ function completeOrder() {
     }
 }
 
-function toggleDescription(){
+function toggleDescription(id){
+    
+    let description = document.getElementById(`description_${id}`);
+    description.classList.toggle("active")
+   
 
 }
-
-
 
