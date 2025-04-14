@@ -16,11 +16,39 @@ body {
 html {
     padding: 0;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    color: #2c6e49;
+    h1 {
+        
+        font-size: 2rem;
+    }
+    #menu {
+        gap: 20px;
+        list-style: none;
+        display: flex !important;
+        a {
+            font-size: 1.2rem;
+            color: #2c6e49;
+        }
+    }
+    #ham {
+        display: none;
+    }
+
+    #ham:hover {
+        cursor: pointer;
+    }
+}
+
 .sidebar{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 100vh;
+    height: 100%;
     width: 10vw;
     
     /* position: fixed; */
@@ -279,3 +307,37 @@ html {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    #ham {
+        background-color: #297045;
+        color: #297045;
+        display: flex !important;
+        background: none;
+        border: none;
+        z-index: 100;
+        overflow-y: hidden;
+        flex-direction: column;
+        gap: 6px;
+        span {
+            background-color:#297045;
+            width: 40px;
+            height: 8px;
+            border-radius: 10px;
+        }       
+    }
+
+    #ham.active {
+        
+        gap: 0;
+        span:nth-child(1) {
+            
+            transform: rotateZ(45deg) translateY(3px);
+        }
+        span:nth-child(2) {
+           
+            transform: rotateZ(-45deg) translateY(-3px);
+        }
+    }
+
+    
+}

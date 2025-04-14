@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="order.css" />
     <title>Oh So Vegan Order to Go</title>
 </head>
+<nav>
+    <h1>Oh So Vegan</h1>
+    <ul id="menu" >
+        <li><a onclick="toggleNav()" href="index.html">Home</a></li>
+        <li><a onclick="toggleNav()" href="menu.html">Menu</a></li>
+        <li><a onclick="toggleNav()" href="reser.html">Reservation</a></li>
+        <li><a onclick="toggleNav()" href="order/order.html">Order</a></li>
+        <li><a onclick="toggleNav()" href="ref.html">Refrences</a></li>
+
+
+    </ul>
+    <button id="ham" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+    </button>
+</nav>
 <body>
     <div class="sidebar">
         <div class="items">
@@ -209,11 +225,12 @@
             </div>
     
     </div>
-    <div id="lunch">
+    
+    
         
-
+    <div class="orderslides">
         <h1>Lunch</h1>
-        <div class="orderslide">
+        <div class="orderslide" id="Lunch">
             <div class="top">
                 <img src="latinsalad.png" alt="Image of breakfast taco">
     
@@ -285,7 +302,227 @@
                 </div>
             </div>
         </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="carpaccio.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Smoked Portobella Carpaccio $15</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('carpaccio.png','Smoked Portobella Carpaccio', 15)">Add to cart</button>
+                    <button onclick="toggleDescription(14)">description</button>
+                </div>
+                <div class="description-container" id="description_14" onclick="toggleDescription(14)">
+                    <div class="description-card">
+                        <p>caper dressing, cracked pepper, nigella seed & fennel remoulade. $15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="CSGruben.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>CSG Ruben $15</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('CSGruben.png','CSG Ruben', 15)">Add to cart</button>
+                    <button onclick="toggleDescription(15)">description</button>
+                </div>
+                <div class="description-container" id="description_15" onclick="toggleDescription(15)">
+                    <div class="description-card">
+                        <p>Russian dressing, swiss cheese, kraut, rye. Choose house corned beef, house turkey, or seasonal veggies. $15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="ByeFelicia.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Bye Felicia! $14</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('ByeFelicia.png','Bye Felicia!', 14)">Add to cart</button>
+                    <button onclick="toggleDescription(16)">description</button>
+                </div>
+                <div class="description-container" id="description_16" onclick="toggleDescription(16)">
+                    <div class="description-card">
+                        <p>Roasted and pickled seasonal veggies, artichoke relish, creamy balsamic mayo, arugula, raw onion, seeded hoagie. $14</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="phoagie.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Phoagie $14</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('phoagie.png','Phoagie', 14)">Add to cart</button>
+                    <button onclick="toggleDescription(17)">description</button>
+                </div>
+                <div class="description-container" id="description_17" onclick="toggleDescription(17)">
+                    <div class="description-card">
+                        <p>Hoisin eggplant (contains gluten), avo, fresh and frizzled onions, cilantro, pho sauce, seeded hoagie. $14</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Dinner</h1>
+        <div class="orderslide" id="Dinner">
+            <div class="top">
+                <img src="sprokpernil.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Smoked 'Pork' Pernil $18</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('sprokpernil.png','Smoked Pork Pernil', 18)">Add to cart</button>
+                    <button onclick="toggleDescription(18)">description</button>
+                </div>
+                <div class="description-container" id="description_18" onclick="toggleDescription(18)">
+                    <div class="description-card">
+                        <p>Jackfruit ‘pork’, black bean rice, roasted garlic sauce, mojo verde, fresno chili. 18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="Macncheese.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Mac N Cheese $20</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('Macncheese.png','Mac N Cheese', 20)">Add to cart</button>
+                    <button onclick="toggleDescription(18)">description</button>
+                </div>
+                <div class="description-container" id="description_18" onclick="toggleDescription(18)">
+                    <div class="description-card">
+                        <p>Topped with savory breadcrumbs and veggie parm. $20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="hotsandwich.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Nashville Hot Sandwich $26</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('hotsandwich.png','Nashville Hot Sandwich', 26)">Add to cart</button>
+                    <button onclick="toggleDescription(19)">description</button>
+                </div>
+                <div class="description-container" id="description_19" onclick="toggleDescription(19)">
+                    <div class="description-card">
+                        <p>buttermilk waffle, nashville hot oil, slaw, pickles. $26</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="lasagna.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Southern Fried Lasagna $31</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('lasagna.png','Southern Fried Lasagna', 31)">Add to cart</button>
+                    <button onclick="toggleDescription(20)">description</button>
+                </div>
+                <div class="description-container" id="description_20" onclick="toggleDescription(20)">
+                    <div class="description-card">
+                        <p>bolognese, pine nut ricotta, spinach. $31</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="greenchile.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Green Chile Mac $24</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('greenchile.png','Green Chile Mac', 24)">Add to cart</button>
+                    <button onclick="toggleDescription(21)">description</button>
+                </div>
+                <div class="description-container" id="description_21" onclick="toggleDescription(21)">
+                    <div class="description-card">
+                        <p>lager bechamel, white cheddar, roasted green chile. $24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="potatopizza.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Hot Potatao Pizza $16</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('potatopizza.png','Hot Potatao Pizza', 16)">Add to cart</button>
+                    <button onclick="toggleDescription(22)">description</button>
+                </div>
+                <div class="description-container" id="description_22" onclick="toggleDescription(22)">
+                    <div class="description-card">
+                        <p>Crispy Potatoes, Long Hot Peppers, Sweet Onions, Spicy Romesco, Parsley (12") $16, (18") $28</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="nonnameatballs.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Nonna Meatballs $24</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('nonnameatballs.png','Nonna Meatballs', 24)">Add to cart</button>
+                    <button onclick="toggleDescription(23)">description</button>
+                </div>
+                <div class="description-container" id="description_23" onclick="toggleDescription(23)">
+                    <div class="description-card">
+                        <p>Blend of pea protein and chickpeas creates a vegan version of Nonna Sesito meatballs, served with our Rustic sauce and charred fococcia. $24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderslide">
+            <div class="top">
+                <img src="haymakerpizza.png" alt="Image of breakfast taco">
+    
+            </div>
+            <div class="bottom">
+                <h1>Haymaker Pizza $19</h1>
+                <div class="buttons">
+                    <button onclick="addToCart('haymakerpizza.png','Haymaker Pizza', 19)">Add to cart</button>
+                    <button onclick="toggleDescription(24)">description</button>
+                </div>
+                <div class="description-container" id="description_24" onclick="toggleDescription(24)">
+                    <div class="description-card">
+                        <p>Vegan Mozzarella, Garlic Sauce, Italian Sausage, Red Onion, Organic Tomato Sauce, Fresh Oregano
+                            Small (12") +19.00
+                            Large(18") +34.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 </div>
     <div id="checkout" class="cartpanel" onclick="toggleCartView()">
         <div class="card">
