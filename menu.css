@@ -423,6 +423,22 @@ footer a{
   .Dinner a{
     font-size: 3vw;
   }
-  
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2c6e49;
+    color: #f5f3ec;
+    height: 5vh;
 }
-  
+
+footer a{
+    color: #f5f3ec;
+    font-size: .3rem;
+    font-weight: 300;
+    margin: 10px;
+    text-decoration: none;
+}
+}
