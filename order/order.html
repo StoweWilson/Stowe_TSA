@@ -7,18 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="order.css" />
     <title>Oh So Vegan Order to Go</title>
 </head>
 <nav>
     <h1>Oh So Vegan</h1>
     <ul id="menu" >
-        <li><a onclick="toggleNav()" href="index.html">Home</a></li>
-        <li><a onclick="toggleNav()" href="menu.html">Menu</a></li>
-        <li><a onclick="toggleNav()" href="reser.html">Reservation</a></li>
-        <li><a onclick="toggleNav()" href="order/order.html">Order</a></li>
-        <li><a onclick="toggleNav()" href="ref.html">Refrences</a></li>
-
+        <li><a onclick="toggleNav()" href="../index.html">Home</a></li>
+        <li><a onclick="toggleNav()" href="../menu.html">Menu</a></li>
+        <li><a onclick="toggleNav()" href="../reser.html">Reservation</a></li>
+        <li><a onclick="toggleNav()" href="order.html">Order</a></li>
+        <li><a onclick="toggleNav()" href="../ref.html">Refrences</a></li>
+        <li><a onclick="toggleNav()" href="../story.html">About</a></li>
 
     </ul>
     <button id="ham" onclick="toggleNav()">
@@ -56,7 +59,7 @@
     </div>
 
     <div id="breakfasts">
-        <h1>Breakfast</h1>
+        <h1 class="header">Breakfast</h1>
         <div class="orderslides">
             <div class="orderslide">
             <div class="top">
@@ -66,7 +69,7 @@
                 <div class="bottom">
                     <h1>Classic Breakfast Sandwich $9</h1>
                     <div class="buttons">
-                        <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
+                        <button onclick="addToCart('breakfasr_sand.png','Classic Breakfast Sandwich', 9)">Add to cart</button>
                         <button onclick="toggleDescription(1)">description</button>
                     </div>
                     <div class="description-container" id="description_1" onclick="toggleDescription(1)">
@@ -84,9 +87,9 @@
         
                 </div>
                 <div class="bottom">
-                    <h1>Créme Brûlée French Toast</h1>
+                    <h1>Créme Brûlée French Toast $18</h1>
                     <div class="buttons">
-                        <button onclick="addToCart('frenchToast.avif','Créme Brûlée French Toast', 18)">Add to cart</button>
+                        <button onclick="addToCart('frenchToast.png','Créme Brûlée French Toast', 18)">Add to cart</button>
                         <button onclick="toggleDescription(2)">description</button>
                     </div>
                     <div class="description-container" id="description_2" onclick="toggleDescription(2)">
@@ -228,9 +231,8 @@
     </div>
     
     
-        
+    <h1 class="header">Lunch</h1>
     <div class="orderslides">
-        <h1>Lunch</h1>
         <div class="orderslide" id="Lunch">
             <div class="top">
                 <img src="latinsalad.png" alt="Image of breakfast taco">
@@ -375,7 +377,9 @@
                 </div>
             </div>
         </div>
-        <h1>Dinner</h1>
+        </div>
+        <h1 class="header">Dinner</h1>
+<div class="orderslides">
         <div class="orderslide" id="Dinner">
             <div class="top">
                 <img src="sprokpernil.png" alt="Image of breakfast taco">
@@ -543,7 +547,6 @@
     </div>
 
 
-	
 </body>
 <script src="order.js"></script>
 </html>

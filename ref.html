@@ -6,26 +6,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
     <title>References</title>
 </head>
 <body>
-    <header>
-        
-        <div class="nav-container">
-            <nav>
-                
-                <ul class="nav-links">
-                    <ul class="logo">
-                        <li><a href="index.html">OhSoVegan</a></li>
-                    </ul>
-                    <li><a href="menu.html">Menus</a></li>
-                    <li><a href="story.html">Our Story</a></li>
-                    <li><a href="reser.html">Reservations</a></li>
-                    <li><a href="ref.html">Refrences</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <nav>
+        <h1>Oh So Vegan</h1>
+        <ul id="menu" >
+            <li><a onclick="toggleNav()" href="index.html">Home</a></li>
+            <li><a onclick="toggleNav()" href="menu.html">Menu</a></li>
+            <li><a onclick="toggleNav()" href="reser.html">Reservation</a></li>
+            <li><a onclick="toggleNav()" href="order/order.html">Order</a></li>
+            <li><a onclick="toggleNav()" href="ref.html">Refrences</a></li>
+            <li><a onclick="toggleNav()" href="story.html">About</a></li>
+
+        </ul>
+        <button id="ham" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
     <div class="title">References</div>
 
     <div class="websites">
@@ -102,4 +104,5 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
