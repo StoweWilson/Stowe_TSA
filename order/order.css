@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Fugaz One";
+    scroll-behavior: smooth;
     
 }
 
@@ -63,6 +64,7 @@ nav {
     width: 10vw;
     font-weight: 500;
     /* position: fixed; */
+    color: #2c6e49;
     z-index: 1;
     background-color: white;
     padding-top: 20px;
@@ -76,6 +78,8 @@ nav {
 }
 .sidebar a:hover{
     text-decoration: underline;
+    color: #2c6e49;
+
 }
 
 .sidebar button{
@@ -114,7 +118,7 @@ nav {
     }
 }
 .item:hover {
-    background-color: #3e7b54;
+    background-color: whitesmoke;
     color: whitesmoke;
     position: relative;
     .hover-effect {
@@ -343,10 +347,10 @@ nav {
         justify-content: space-between;
         height: 100%;
         width: 15vw;
-        
+        color: #2c6e49;
         /* position: fixed; */
         z-index: 1;
-        background-color: #57A773;
+        background-color: white;
         padding-top: 20px;
         
     }
@@ -357,6 +361,7 @@ nav {
     }
     .sidebar a:hover{
         text-decoration: underline;
+        color: #2c6e49;
     }
     
     .sidebar button{
@@ -388,6 +393,7 @@ nav {
         border-radius: 50px;
         display: inline-block;
         gap: 10px;
+        color: #2c6e49;
         padding: 5px;
         min-width: fit-content;
         .hover-effect {
@@ -395,14 +401,15 @@ nav {
         }
     }
     .item:hover {
-        background-color: #3e7b54;
-        color: whitesmoke;
+        background-color: whitesmoke;
+        color: #2c6e49;
         position: relative;
         .hover-effect {
             display: inline-block;
         }
         .items{
             width: 40vw;
+            color: #2c6e49;
         }
     }
     .hover-effect {
